@@ -1,7 +1,7 @@
 package parcial1.tarea4;
 
 import javax.swing.JOptionPane;
-
+//l
 public class Triangulo {
     public static void trian(int entrada_datos) {
 
