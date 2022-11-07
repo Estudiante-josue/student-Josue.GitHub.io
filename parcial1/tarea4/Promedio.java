@@ -1,6 +1,7 @@
 package parcial1.tarea4;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
+
 
 public class Promedio {
     public static void prome(int iteracion) {
@@ -12,7 +13,7 @@ public class Promedio {
 
         for (int i = 0; i<array.length; i++) {
 
-            entrada = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingresa los números a promediar: "));
+            entrada = Double.parseDouble(Scanner.(null, "Ingresa los números a promediar: "));
             array[i] = entrada;
 
             if (i<array.length-1) {
@@ -40,8 +41,8 @@ public class Promedio {
     }
     
     public static void main(String[] args) {
-
-        int iteracion = Integer.parseInt(JOptionPane.showInputDialog(null, "¿Cuántos números desea promediar?"));
+       
+        int iteracion = Integer.parseInt( new String Scanner(null, "¿Cuántos números desea promediar?"));
         prome(iteracion);
 
     }
