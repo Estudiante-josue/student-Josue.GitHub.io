@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class CalculoPi {
     public static void main(String[] args) {
-        Iteracion i=new Iteracion();
     }
 }
 
