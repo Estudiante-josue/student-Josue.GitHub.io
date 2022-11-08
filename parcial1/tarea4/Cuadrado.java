@@ -1,50 +1,33 @@
 package parcial1.tarea4;
 
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
-public class Cuadrado {
-    public static void cubo(int entrada_datos) {
+public class Cuadrado{ 
+  Scanner teclado = new Scanner(System.in);
+   
+int n;
 
-        if (entrada_datos>=0 && entrada_datos<=9) {
-      
-          for (int i=0;i<entrada_datos;i++) {
-             System.out.print("*");
+public void dato() {
+    System.out.print("Ingresa lado del cuadrado: ");
+    n = teclado.nextInt();
+}
 
+public void proceso() {
+    if(n >= 2 && n <= 50) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(" *");
             }
-
-          System.out.println();
-
-          for (int i=0;i<entrada_datos-2;i++) {
-             System.out.print("*");
-
-             for (int j= 0; j<entrada_datos-2; j++) {
-
-                 System.out.print(" ");
-
-                } 
-
-              System.out.println("*");
-
-            }
-
-          for (int i=0; i<entrada_datos; i++) {
-
-             System.out.print("*");
-
-            }
-
-        } else {
-
-            JOptionPane.showMessageDialog(null, "Error \n El numero que usted ingreso no es valido");
-        
+            System.out.println("");
         }
-     
+    }else {
+        System.out.println("Ingresa un numero entre 2 y 50");
     }
+}
 
-    public static void main(String[] args) {
-
-        int entrada_datos = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa en numeros el tamaño que deseas que tenga \n la impresión del cuadrado en un rango de 0 a 9: "));
-        cubo(entrada_datos);
-
-    }
+public static void main(String[] args) {
+    Cuadrado fc = new Cuadrado();
+    fc.dato();
+    fc.proceso();
+}
 }
