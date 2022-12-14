@@ -1,8 +1,10 @@
 public class IfEleseIf {  
         public static void main(String[] args) {
       
-          double number = -0.004;
+          double number = 10;
       
+          
+  
           // checks if number is greater than 0
           if (number > 0) {
             System.out.println("The number is positive.");
@@ -18,4 +20,4 @@ public class IfEleseIf {
             System.out.println("The number is 0.");
           }
         }
-      }
+}
