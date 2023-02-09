@@ -5,8 +5,10 @@ public class JosueLeonGonzalezProg6 {
         //imprime 
         System.out.println("Josue Leon Gonzalez");
         
+        System.out.println(" ");
+
         try(Scanner sc = new Scanner(System.in)){
-          System.out.println("Ingresa un numero");
+          System.out.println("Ingresa un numero:");
           int n= sc.nextInt();
           
       for (int i = 2; i <= n; i=i+2) {
